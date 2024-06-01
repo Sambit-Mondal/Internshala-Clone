@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+html {
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
 nav {
     width: 100%;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     height: auto;
     overflow: hidden;
@@ -32,8 +36,8 @@ nav {
 .search {
     border: 2px solid rgb(28, 100, 46);
     background-color: rgb(28, 100, 46);
-    margin-left: 80px;
-    margin-right: 70px;
+    /* margin-left: 180px;
+    margin-right: 70px; */
     border-radius: 5px;
 }
 
@@ -51,6 +55,7 @@ nav {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 5px;
+    padding-left: 10px;
 }
 
 button {
@@ -58,10 +63,27 @@ button {
     padding: 5px;
     border-radius: 8px;
     font-size: 15px;
+    width: 80px;
+    transition: 0.3s ease;
 }
 
-button.register,
-button.admin {
+button.register {
     color: white;
     background-color: rgb(28, 100, 46);
+}
+
+.elements p,
+.search input,
+.user-auth button {
+    cursor: pointer;
+}
+
+.user-auth button.login:hover {
+    background-color: rgb(28, 100, 46);
+    color: white;
+}
+
+.user-auth button.register:hover {
+    background-color: white;
+    color: rgb(28, 100, 46);
 }
