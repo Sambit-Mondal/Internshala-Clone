@@ -79,11 +79,12 @@ button.register {
 }
 
 .user-auth button.login:hover {
-    background-color: rgb(28, 100, 46);
+    background-color: rgb(172, 170, 170);
     color: white;
 }
 
 .user-auth button.register:hover {
-    background-color: white;
-    color: rgb(28, 100, 46);
+    border-color: rgb(19, 67, 31);
+    background-color: rgb(19, 67, 31);
+    color: #ffffff;
 }
