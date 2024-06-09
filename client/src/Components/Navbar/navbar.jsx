@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../../Assets/logo.png'
 import './navbar.css'
+import Sidebar from './Sidebar'
 
 function Navbar() {
   return (
@@ -27,6 +28,7 @@ function Navbar() {
           <button className='register'>Register</button>
         </div>
       </nav>
+      <Sidebar />
     </div>
   )
 }
