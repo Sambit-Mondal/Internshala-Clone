@@ -33,6 +33,7 @@ nav {
     font-size: 12px;
     padding: 3px 6px;
     margin-left: 6px;
+    margin-right: 6px;
     letter-spacing: .5px;
 }
 
@@ -91,11 +92,7 @@ button.login {
     transform: translateY(-2px);
 }
 
-/* .navbar-large-screens {
-    display: none;
-} */
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1250px) {
     .navbar-large-screens {
         display: none;
     }
