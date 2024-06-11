@@ -17,7 +17,7 @@ function Navbar() {
             <p className='courses cursor-pointer'>Courses <span className='offer-text'>OFFER</span> <i class="bi bi-caret-down-fill"></i></p>
           </div>
         </div>
-        <div className='user-auth flex gap-5 items-end content-center pl-5'>
+        <div className='user-auth flex gap-5 items-end content-center pl-3 pr-5'>
           <div className='search flex content-center items-center'>
             <i class="bi bi-search"></i>
             <p className='cursor-pointer'>Search</p>

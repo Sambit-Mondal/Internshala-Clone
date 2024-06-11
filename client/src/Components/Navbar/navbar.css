@@ -71,6 +71,7 @@ button {
     width: auto;
     height: 2.5rem;
     transition: 0.3s ease;
+    font-weight: 500;
 }
 
 button.register {
