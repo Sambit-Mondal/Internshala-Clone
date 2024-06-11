@@ -8,6 +8,19 @@
 html {
     scroll-behavior: smooth;
     user-select: none;
+    letter-spacing: 0.5px;
+}
+
+.nav-main {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-and-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sidemenu {
@@ -15,16 +28,15 @@ html {
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 0;
     height: 100vh;
     padding-bottom: 40px;
-    padding-top: 40px;
+    padding-top: 80px;
     padding-left: 15px;
     gap: 15px;
     transition: 0.2s ease-in-out;
     overflow: hidden;
     top: 0;
-    left: 0;
+    left: -999px;
     position: absolute;
     z-index: 40;
     background-color: #ffffff;
@@ -35,16 +47,44 @@ html {
 }
 
 .sidemenu hr {
-    width: 70%;
+    width: 90%;
     height: 2px;
     border: 1px solid rgb(188, 184, 184);
 }
 
 .show-menu {
-    width: 90%;
+    width: 80%;
+    left: 0px;
     transform: translateX(0px);
+}
+
+.courses {
+    display: flex;
+}
+
+.offer-text {
+    background-color: #FF8C00;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 3px 6px;
+    margin-left: 6px;
+    margin-right: 6px;
+    letter-spacing: .5px;
+}
+
+.register i {
+    padding-left: 5px;
+    padding-right: 2px;
 }
 
 .navbar-small-screens {
     display: none;
+}
+
+@media screen and (max-width: 1250px) {
+    .navbar-small-screens {
+        display: flex;
+    }
 }
