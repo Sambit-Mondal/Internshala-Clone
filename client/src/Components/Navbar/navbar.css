@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -11,10 +12,8 @@ html {
 
 nav {
     box-shadow: 5px 5px 10px rgb(188, 184, 184);
-}
-
-.nav-main i {
-    display: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .elements {
@@ -22,9 +21,26 @@ nav {
     justify-content: center;
 }
 
+.elements .courses {
+    display: flex;
+}
+
+.elements .offer-text {
+    background-color: #FF8C00;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 3px 6px;
+    margin-left: 6px;
+    letter-spacing: .5px;
+}
+
+.user-auth {
+    margin-left: 3rem;
+}
+
 .search {
-    border: 2px solid rgb(28, 100, 46);
-    background-color: rgb(28, 100, 46);
     border-radius: 5px;
 }
 
@@ -34,29 +50,35 @@ nav {
     justify-content: center;
     padding-left: 10px;
     padding-right: 10px;
-    color: #ffffff;
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
 }
 
-.search input {
+.search p {
     padding-left: 5px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 5px;
-    padding-left: 10px;
 }
 
 button {
-    border: 2px solid rgb(28, 100, 46);
-    padding: 5px;
-    border-radius: 8px;
+    border: 2px solid rgb(0, 165, 236);
+    padding: 8px 16px;
+    border-radius: 3px;
     font-size: 15px;
-    width: 80px;
+    width: auto;
+    height: 2.5rem;
     transition: 0.3s ease;
 }
 
 button.register {
     color: white;
-    background-color: rgb(28, 100, 46);
+    background-color: rgb(0, 165, 236);
+}
+
+button.login {
+    padding: 7px 20px;
 }
 
 .user-auth button.login:hover {
@@ -65,12 +87,16 @@ button.register {
 }
 
 .user-auth button.register:hover {
-    background-color: rgb(20, 69, 32);
+    background-color: rgb(0, 114, 163);
     transform: translateY(-2px);
 }
 
+/* .navbar-large-screens {
+    display: none;
+} */
+
 @media screen and (max-width: 1024px) {
-    .nav-main i {
-        display: block;
+    .navbar-large-screens {
+        display: none;
     }
 }

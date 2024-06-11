@@ -6,27 +6,25 @@ import Sidebar from './Sidebar'
 function Navbar() {
   return (
     <div>
-      <nav className='navbar-large-screens flex fixed top-0 flex-wrap h-auto overflow-hidden pt-4 pb-4 pl-6 pr-6 items-center w-full'>
-        <div className='nav-main flex flex-1'>
-          <i class="nav-btn bi bi-list items-center content-center text-xl pr-4"></i>
-          <div className='nav-logo flex gap-5 mr-36 font-bold text-xl items-center content-center'>
-            <img className='w-10 h-10' src={logo} alt='InternQuest logo'></img>
-            <p className='nav-text'>
-              InternQuest
-            </p>
+      <nav className='navbar-large-screens grid fixed top-0 flex-wrap h-auto overflow-hidden pt-4 pb-4 items-center w-full'>
+        <div className='nav-main flex pl-5'>
+          <div className='nav-logo flex gap-5 mr-16 font-bold text-xl items-center content-center'>
+            <img className='w-32 h-12' src={logo} alt='InternQuest logo'></img>
           </div>
-          <div className='elements flex gap-20 flex-1'>
+          <div className='elements flex gap-10'>
             <p className='cursor-pointer'>Internships <i class="bi bi-caret-down-fill"></i></p>
             <p className='cursor-pointer'>Jobs <i class="bi bi-caret-down-fill"></i></p>
-          </div>
-          <div className='search flex ml-36 mr-24'>
-            <i class="bi bi-search"></i>
-            <input className='cursor-pointer' placeholder='Search' />
+            <p className='courses cursor-pointer'>Courses <span className='offer-text'>OFFER</span> <i class="bi bi-caret-down-fill"></i></p>
           </div>
         </div>
-        <div className='user-auth flex gap-5'>
+        <div className='user-auth flex gap-5 items-end content-center pl-5'>
+          <div className='search flex content-center items-center'>
+            <i class="bi bi-search"></i>
+            <p className='cursor-pointer'>Search</p>
+          </div>
           <button className='login cursor-pointer'>Login</button>
-          <button className='register cursor-pointer'>Register</button>
+          <button className='register register-candidate cursor-pointer'>Candidate Sign-up</button>
+          <button className='register regitser-employer cursor-pointer'>Employer Sign-up</button>
         </div>
       </nav>
       <Sidebar />
