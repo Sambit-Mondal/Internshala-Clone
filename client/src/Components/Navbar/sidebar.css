@@ -8,17 +8,16 @@
 html {
     scroll-behavior: smooth;
     user-select: none;
+    overflow: hidden;
 }
 
-.nav-main {
+.nav-main-small {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    justify-content: center;
 }
 
 .logo-and-toggle {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -73,6 +72,11 @@ html {
     letter-spacing: .5px;
 }
 
+.register:hover {
+    background-color: rgb(0, 114, 163);
+    transform: translateY(-2px);
+}
+
 .register i {
     padding-left: 5px;
     padding-right: 2px;
@@ -84,6 +88,6 @@ html {
 
 @media screen and (max-width: 1250px) {
     .navbar-small-screens {
-        display: flex;
+        display: block;
     }
 }

@@ -30,9 +30,9 @@ function Sidebar() {
 
     return (
         <div>
-            <nav ref={ref} className='navbar-small-screens flex flex-wrap items-center content-center pt-4 pb-4 w-full'>
-                <div className='nav-main grid'>
-                    <div className='logo-and-toggle flex'>
+            <nav ref={ref} className='navbar-small-screens flex flex-wrap items-center justify-center pt-4 pb-4 w-full'>
+                <div className='nav-main-small grid'>
+                    <div className='logo-and-toggle flex items-center justify-start pl-3'>
                         <button className='toggle border-0 z-50' onClick={() => setSidebarOpen((prev) => !prev)}>
                             {sidebarOpen ? (
                                 <i class='bi bi-x-lg text-2xl'></i>
@@ -41,7 +41,7 @@ function Sidebar() {
                             )}
                         </button>
 
-                        <div className={`sidemenu${sidebarOpen ? '  show-menu' : ''}`}>
+                        <div className={`sidemenu${sidebarOpen ? ' show-menu' : ''}`}>
                             <p>Internships</p>
                             <p>Jobs</p>
                             <p className='courses'>Courses <span className='offer-text'>OFFER</span></p>
@@ -61,8 +61,8 @@ function Sidebar() {
                             <img className='w-auto h-12' src={logo} alt='InternQuest logo'></img>
                         </div>
                     </div>
-                    <div className='user-auth flex'>
-                        <button className='register cursor-pointer w-auto h-auto items-end content-end'>Register <i class="bi bi-caret-down-fill"></i></button>
+                    <div className='user-auth-small flex items-center justify-end pr-3'>
+                        <button className='register cursor-pointer w-fit h-auto items-center justify-center'>Register <i class="bi bi-caret-down-fill"></i></button>
                     </div>
                 </div>
             </nav>
