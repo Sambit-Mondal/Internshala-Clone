@@ -40,6 +40,30 @@ html {
     background-color: #ffffff;
 }
 
+.profile {
+    width: 100%;
+    gap: 7px;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+}
+
+.sidebar-user-details {
+    flex-direction: column;
+}
+
+.sidebar-username {
+    font-weight: 500;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar-user-details {
+    grid-template-rows: repeat(2, 1fr);
+}
+
 .sidemenu p {
     display: block;
 }
@@ -51,7 +75,7 @@ html {
 }
 
 .show-menu {
-    width: 80%;
+    width: 85%;
     left: 0px;
     transform: translateX(0px);
 }

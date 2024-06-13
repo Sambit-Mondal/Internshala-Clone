@@ -30,7 +30,7 @@ function Sidebar() {
 
 
     // Defining an user
-    const user = null;
+    const user = 1;
 
     return (
         <div>
@@ -47,20 +47,22 @@ function Sidebar() {
 
                         <div className={`sidemenu${sidebarOpen ? ' show-menu' : ''}`}>
                             {user ? (
-                                <div className='profile'>
-                                    <div className='sidebar-user-photo'>
-                                        <img src={user.photo} alt='' />
+                                <>
+                                <div className='profile flex'>
+                                    <div className='sidebar-user-photo pb-[15px]'>
+                                        <img src={user.photo} alt='' className='bg-black rounded-full' />
                                     </div>
-                                    <div className='sidebar-user-details'>
+                                    <div className='sidebar-user-details flex'>
                                         <div className='sidebar-username'>
-                                            <p>{user.username}</p>
+                                            <p>Sambit Mondal</p>
                                         </div>
                                         <div className='sidebar-user-email'>
-                                            <p>{user.email}</p>
+                                            <p>sambitmondal2005@gmail.com</p>
                                         </div>
                                     </div>
-                                    <hr></hr>
                                 </div>
+                                <hr></hr>
+                                </>
                             ) : ""}
                             <p>Internships</p>
                             <p>Jobs</p>
