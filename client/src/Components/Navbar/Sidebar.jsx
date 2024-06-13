@@ -48,20 +48,20 @@ function Sidebar() {
                         <div className={`sidemenu${sidebarOpen ? ' show-menu' : ''}`}>
                             {user ? (
                                 <>
-                                <div className='profile flex'>
-                                    <div className='sidebar-user-photo pb-[15px]'>
-                                        <img src={user.photo} alt='' className='bg-black rounded-full' />
-                                    </div>
-                                    <div className='sidebar-user-details flex'>
-                                        <div className='sidebar-username'>
-                                            <p>Sambit Mondal</p>
+                                    <div className='profile flex'>
+                                        <div className='sidebar-user-photo pb-[15px]'>
+                                            <img src={user.photo} alt='' className='bg-black rounded-full' />
                                         </div>
-                                        <div className='sidebar-user-email'>
-                                            <p>sambitmondal2005@gmail.com</p>
+                                        <div className='sidebar-user-details flex'>
+                                            <div className='sidebar-username'>
+                                                <p>Sambit Mondal</p>
+                                            </div>
+                                            <div className='sidebar-user-email'>
+                                                <p>sambitmondal2005@gmail.com</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <hr></hr>
+                                    <hr></hr>
                                 </>
                             ) : ""}
                             <p>Internships</p>
@@ -103,9 +103,16 @@ function Sidebar() {
                             <img className='w-auto h-12' src={logo} alt='InternQuest logo'></img>
                         </div>
                     </div>
-                    <div className='user-auth-small flex items-center justify-end pr-3'>
-                        <button className='register cursor-pointer w-fit h-auto items-center justify-center'>Register <i class="bi bi-caret-down-fill"></i></button>
-                    </div>
+                    {user ? (
+                        <div className='user-after-auth flex items-center justify-end pr-5 gap-10'>
+                            <i class="bi bi-bell"></i>
+                            <i class="bi bi-chat-left-dots"></i>
+                        </div>
+                    ) : (
+                        <div className='user-auth-small flex items-center justify-end pr-3'>
+                            <button className='register cursor-pointer w-fit h-auto items-center justify-center'>Register <i class="bi bi-caret-down-fill"></i></button>
+                        </div>
+                    )}
                 </div>
             </nav>
         </div>

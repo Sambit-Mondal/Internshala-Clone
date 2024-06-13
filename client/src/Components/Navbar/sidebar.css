@@ -106,6 +106,15 @@ html {
     padding-right: 2px;
 }
 
+.user-after-auth {
+    width: 100%;
+}
+
+.user-after-auth i {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
 .navbar-small-screens {
     display: none;
 }
