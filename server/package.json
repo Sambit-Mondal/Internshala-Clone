@@ -1,20 +1,21 @@
 {
-  "name": "internquest-backend",
+  "name": "bakend",
   "version": "1.0.0",
-  "description": "This is the backend (server-side) of the InternQuest internships platform.",
+  "description": "this is a backend of internshala ",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js"
+    "start": "nodemon index.js"
   },
-  "author": "Sambit Mondal",
+  "author": "ankit",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.6.7",
+    "body-parser": "^1.20.2",
     "cors": "^2.8.5",
-    "express": "^4.19.2",
-    "mongoose": "^8.4.0",
-    "nodemon": "^3.1.2"
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.1.1",
+    "nodemon": "^3.0.3"
   }
 }
